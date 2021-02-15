@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : C:\Users\netube\Desktop\NETUBE\OscarA\PCB\Oscar_MainBoard.PcbDoc
+Date         : 2021/1/5
+Time         : 22:10:15
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 98.70%
+    Connections, 230
+    Connections routed, 227
+    Connections remaining, 3
+count : 4

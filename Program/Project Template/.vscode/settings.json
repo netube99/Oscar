@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "bsp_i2c.h": "c",
+        "bsp.h": "c",
+        "gd32f1x0.h": "c",
+        "gd32f1x0_libopt.h": "c",
+        "uio.h": "c",
+        "bsp_spi.h": "c",
+        "sio.h": "c"
+    }
+}

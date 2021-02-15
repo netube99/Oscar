@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "GD32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Keil_v5/ARM/CMSIS/**"
+            ],
+            "defines": [
+                "GD32F130_150",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "compilerPath": "C:/mingw64/bin/gcc.exe",
+            "cStandard": "c99",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "clang-arm"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,7 @@
+Added Component: Designator=P1(M3x6_mini)
+Added Component: Designator=P2(M3x6_mini)
+Added Component: Designator=P3(M3x6_mini)
+Added Component: Designator=P4(M3x6_mini)
+Added Room: Name=LCD
+Added Room: Name=Oscar_MainBoard_Root
+Added Room: Name=USB&Power

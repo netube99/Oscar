@@ -1,0 +1,8 @@
+Added Component: Designator=P1(M3x65_N)
+Added Component: Designator=P2(M3x65_N)
+Added Component: Designator=P3(M3x65_N)
+Added Component: Designator=P4(M3x65_N)
+Added Class: Name=Oscar_MainBoard_Root
+Added Room: Name=LCD
+Added Room: Name=Oscar_MainBoard_Root
+Added Room: Name=USB&Power

@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Oscar BSP: C:/Users/netube/Desktop/NETUBE/OscarA/Program/Project Template/BSP/Include/bsp_uart.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="DoxygenLogo2.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Oscar BSP
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Oscar开发板板级支持包</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('bsp__uart_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">bsp_uart.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>串口外设的参数设置与相关函数声明  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;gd32f1x0.h&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="ring__buffer_8h_source.html">ring_buffer.h</a>&quot;</code><br />
+</div>
+<p><a href="bsp__uart_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a976cb8061376dcdbd9368afef1f4b215"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a976cb8061376dcdbd9368afef1f4b215">UART_IT_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a976cb8061376dcdbd9368afef1f4b215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f2f9952931a595f645c65786bda011"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a95f2f9952931a595f645c65786bda011">UART_IT_DISABLE</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a95f2f9952931a595f645c65786bda011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7eba9da52b565cfa64d94d44b3cbb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>&#160;&#160;&#160;USART0</td></tr>
+<tr class="separator:a1c7eba9da52b565cfa64d94d44b3cbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c245e09c5071b95b4a0c7ecac982a63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a3c245e09c5071b95b4a0c7ecac982a63">SYSTEM_UART_Baud</a>&#160;&#160;&#160;115200</td></tr>
+<tr class="separator:a3c245e09c5071b95b4a0c7ecac982a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20be045f08abe9ed0a90246d814f32e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a20be045f08abe9ed0a90246d814f32e8">SYSTEM_UART_PERCLK</a>&#160;&#160;&#160;RCU_USART0</td></tr>
+<tr class="separator:a20be045f08abe9ed0a90246d814f32e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4264f2f5fe4f4326c7344ee466593a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#ab4264f2f5fe4f4326c7344ee466593a2">SYSTEM_UART_IRQn</a>&#160;&#160;&#160;USART0_IRQn</td></tr>
+<tr class="separator:ab4264f2f5fe4f4326c7344ee466593a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7587282dd756152f6a96a8fc1af712"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#abf7587282dd756152f6a96a8fc1af712">SYSTEM_UART_PRE_PRIORITY</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:abf7587282dd756152f6a96a8fc1af712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d957a1f16211e1f0064ea3567f05dd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a7d957a1f16211e1f0064ea3567f05dd9">SYSTEM_UART_SUB_PRIORITY</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a7d957a1f16211e1f0064ea3567f05dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea590f44852e9baec9e3f93cf050a919"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#aea590f44852e9baec9e3f93cf050a919">SYSTEM_UART_GPIO_TX_PERCLK</a>&#160;&#160;&#160;RCU_GPIOA</td></tr>
+<tr class="separator:aea590f44852e9baec9e3f93cf050a919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1a5df0adec7d9878c2c64dcb7393a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a3f1a5df0adec7d9878c2c64dcb7393a5">SYSTEM_UART_GPIO_TX_PORT</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:a3f1a5df0adec7d9878c2c64dcb7393a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3685fe773d7f029c2f1a84de9173ad7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a3685fe773d7f029c2f1a84de9173ad7f">SYSTEM_UART_TX_PIN</a>&#160;&#160;&#160;GPIO_PIN_9</td></tr>
+<tr class="separator:a3685fe773d7f029c2f1a84de9173ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba266e4bdc625f5641292ae3eab71e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#aaba266e4bdc625f5641292ae3eab71e3">SYSTEM_UART_GPIO_TX_AF</a>&#160;&#160;&#160;GPIO_AF_1</td></tr>
+<tr class="separator:aaba266e4bdc625f5641292ae3eab71e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141bdeea92f504cd4d972a8e911bbc87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a141bdeea92f504cd4d972a8e911bbc87">SYSTEM_UART_GPIO_RX_PERCLK</a>&#160;&#160;&#160;RCU_GPIOA</td></tr>
+<tr class="separator:a141bdeea92f504cd4d972a8e911bbc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97652f5234930d7c8ae9302e9904cd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#ad97652f5234930d7c8ae9302e9904cd4">SYSTEM_UART_GPIO_RX_PORT</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:ad97652f5234930d7c8ae9302e9904cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21101ea810030aba684b26b553c34c68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a21101ea810030aba684b26b553c34c68">SYSTEM_UART_RX_PIN</a>&#160;&#160;&#160;GPIO_PIN_10</td></tr>
+<tr class="separator:a21101ea810030aba684b26b553c34c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ee20e698b44b1ffbb9a86fcdf10a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a32ee20e698b44b1ffbb9a86fcdf10a4f">SYSTEM_UART_GPIO_RX_AF</a>&#160;&#160;&#160;GPIO_AF_1</td></tr>
+<tr class="separator:a32ee20e698b44b1ffbb9a86fcdf10a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53bbdd1a778ed53ba6a598ac5c27739"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#aa53bbdd1a778ed53ba6a598ac5c27739">ESP8285_UART</a>&#160;&#160;&#160;USART1</td></tr>
+<tr class="separator:aa53bbdd1a778ed53ba6a598ac5c27739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1107638b44918a550f9f64feb2a788"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a4c1107638b44918a550f9f64feb2a788">ESP8285_UART_Baud</a>&#160;&#160;&#160;115200</td></tr>
+<tr class="separator:a4c1107638b44918a550f9f64feb2a788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da7cfa7061895d415033b8f1fb47ca3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a7da7cfa7061895d415033b8f1fb47ca3">ESP8285_UART_PERCLK</a>&#160;&#160;&#160;RCU_USART1</td></tr>
+<tr class="separator:a7da7cfa7061895d415033b8f1fb47ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47016de94c6846321cbde9fda0678dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#aa47016de94c6846321cbde9fda0678dc">ESP8285_UART_IRQn</a>&#160;&#160;&#160;USART1_IRQn</td></tr>
+<tr class="separator:aa47016de94c6846321cbde9fda0678dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99701106410f40c20cb9b2b40767cff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#af99701106410f40c20cb9b2b40767cff">ESP8285_UART_PRE_PRIORITY</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:af99701106410f40c20cb9b2b40767cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fb9479e8d6640486b655f4a611de08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a17fb9479e8d6640486b655f4a611de08">ESP8285_UART_SUB_PRIORITY</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a17fb9479e8d6640486b655f4a611de08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16edf7e7d9af606b407c0fdfe5078782"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a16edf7e7d9af606b407c0fdfe5078782">ESP8285_UART_GPIO_TX_PERCLK</a>&#160;&#160;&#160;RCU_GPIOA</td></tr>
+<tr class="separator:a16edf7e7d9af606b407c0fdfe5078782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ec6ae9de353c3310ae6d1483a02995"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#aa5ec6ae9de353c3310ae6d1483a02995">ESP8285_UART_GPIO_TX_PORT</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:aa5ec6ae9de353c3310ae6d1483a02995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad13ce95e91ace24e18fd88dbba03a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#abad13ce95e91ace24e18fd88dbba03a3">ESP8285_UART_TX_PIN</a>&#160;&#160;&#160;GPIO_PIN_2</td></tr>
+<tr class="separator:abad13ce95e91ace24e18fd88dbba03a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa513dabf113d3c7e482f5fd92fa7ac65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#aa513dabf113d3c7e482f5fd92fa7ac65">ESP8285_UART_GPIO_TX_AF</a>&#160;&#160;&#160;GPIO_AF_1</td></tr>
+<tr class="separator:aa513dabf113d3c7e482f5fd92fa7ac65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92992e6ddb138a5e8757c0c17234c804"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a92992e6ddb138a5e8757c0c17234c804">ESP8285_UART_GPIO_RX_PERCLK</a>&#160;&#160;&#160;RCU_GPIOA</td></tr>
+<tr class="separator:a92992e6ddb138a5e8757c0c17234c804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b915104978e11880080824a26c7e2ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a4b915104978e11880080824a26c7e2ba">ESP8285_UART_GPIO_RX_PORT</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="separator:a4b915104978e11880080824a26c7e2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c9b62465b584e6200dca4db1b88cf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a56c9b62465b584e6200dca4db1b88cf8">ESP8285_UART_RX_PIN</a>&#160;&#160;&#160;GPIO_PIN_3</td></tr>
+<tr class="separator:a56c9b62465b584e6200dca4db1b88cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab261e088669b8a0aed343585a49dce4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#ab261e088669b8a0aed343585a49dce4f">ESP8285_UART_GPIO_RX_AF</a>&#160;&#160;&#160;GPIO_AF_1</td></tr>
+<tr class="separator:ab261e088669b8a0aed343585a49dce4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4de1f3206f1800cbc302126beec3b9f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a4de1f3206f1800cbc302126beec3b9f9">System_UART_Init</a> (bool IT_Config)</td></tr>
+<tr class="memdesc:a4de1f3206f1800cbc302126beec3b9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">系统串口外设初始化  <a href="bsp__uart_8h.html#a4de1f3206f1800cbc302126beec3b9f9">更多...</a><br /></td></tr>
+<tr class="separator:a4de1f3206f1800cbc302126beec3b9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5ef2e5978d824283dbc575d7556279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#a8a5ef2e5978d824283dbc575d7556279">System_UART_IT_Handle</a> (void)</td></tr>
+<tr class="separator:a8a5ef2e5978d824283dbc575d7556279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae945f38ab64c1c0a7b43d12b04f4a544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__uart_8h.html#ae945f38ab64c1c0a7b43d12b04f4a544">ESP8285_UART_Init</a> (void)</td></tr>
+<tr class="separator:ae945f38ab64c1c0a7b43d12b04f4a544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>串口外设的参数设置与相关函数声明 </p>
+<dl class="section author"><dt>作者</dt><dd>netube_99/netube@163.com </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021.01.17 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>V1.0 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="aa53bbdd1a778ed53ba6a598ac5c27739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa53bbdd1a778ed53ba6a598ac5c27739">&#9670;&nbsp;</a></span>ESP8285_UART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART&#160;&#160;&#160;USART1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c1107638b44918a550f9f64feb2a788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c1107638b44918a550f9f64feb2a788">&#9670;&nbsp;</a></span>ESP8285_UART_Baud</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_Baud&#160;&#160;&#160;115200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab261e088669b8a0aed343585a49dce4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab261e088669b8a0aed343585a49dce4f">&#9670;&nbsp;</a></span>ESP8285_UART_GPIO_RX_AF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_GPIO_RX_AF&#160;&#160;&#160;GPIO_AF_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a92992e6ddb138a5e8757c0c17234c804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92992e6ddb138a5e8757c0c17234c804">&#9670;&nbsp;</a></span>ESP8285_UART_GPIO_RX_PERCLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_GPIO_RX_PERCLK&#160;&#160;&#160;RCU_GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4b915104978e11880080824a26c7e2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b915104978e11880080824a26c7e2ba">&#9670;&nbsp;</a></span>ESP8285_UART_GPIO_RX_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_GPIO_RX_PORT&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa513dabf113d3c7e482f5fd92fa7ac65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa513dabf113d3c7e482f5fd92fa7ac65">&#9670;&nbsp;</a></span>ESP8285_UART_GPIO_TX_AF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_GPIO_TX_AF&#160;&#160;&#160;GPIO_AF_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a16edf7e7d9af606b407c0fdfe5078782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16edf7e7d9af606b407c0fdfe5078782">&#9670;&nbsp;</a></span>ESP8285_UART_GPIO_TX_PERCLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_GPIO_TX_PERCLK&#160;&#160;&#160;RCU_GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa5ec6ae9de353c3310ae6d1483a02995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ec6ae9de353c3310ae6d1483a02995">&#9670;&nbsp;</a></span>ESP8285_UART_GPIO_TX_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_GPIO_TX_PORT&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa47016de94c6846321cbde9fda0678dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa47016de94c6846321cbde9fda0678dc">&#9670;&nbsp;</a></span>ESP8285_UART_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_IRQn&#160;&#160;&#160;USART1_IRQn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7da7cfa7061895d415033b8f1fb47ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da7cfa7061895d415033b8f1fb47ca3">&#9670;&nbsp;</a></span>ESP8285_UART_PERCLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_PERCLK&#160;&#160;&#160;RCU_USART1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af99701106410f40c20cb9b2b40767cff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99701106410f40c20cb9b2b40767cff">&#9670;&nbsp;</a></span>ESP8285_UART_PRE_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_PRE_PRIORITY&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a56c9b62465b584e6200dca4db1b88cf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c9b62465b584e6200dca4db1b88cf8">&#9670;&nbsp;</a></span>ESP8285_UART_RX_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_RX_PIN&#160;&#160;&#160;GPIO_PIN_3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a17fb9479e8d6640486b655f4a611de08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17fb9479e8d6640486b655f4a611de08">&#9670;&nbsp;</a></span>ESP8285_UART_SUB_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_SUB_PRIORITY&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abad13ce95e91ace24e18fd88dbba03a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abad13ce95e91ace24e18fd88dbba03a3">&#9670;&nbsp;</a></span>ESP8285_UART_TX_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESP8285_UART_TX_PIN&#160;&#160;&#160;GPIO_PIN_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1c7eba9da52b565cfa64d94d44b3cbb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7eba9da52b565cfa64d94d44b3cbb7">&#9670;&nbsp;</a></span>SYSTEM_UART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART&#160;&#160;&#160;USART0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3c245e09c5071b95b4a0c7ecac982a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c245e09c5071b95b4a0c7ecac982a63">&#9670;&nbsp;</a></span>SYSTEM_UART_Baud</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_Baud&#160;&#160;&#160;115200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a32ee20e698b44b1ffbb9a86fcdf10a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ee20e698b44b1ffbb9a86fcdf10a4f">&#9670;&nbsp;</a></span>SYSTEM_UART_GPIO_RX_AF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_GPIO_RX_AF&#160;&#160;&#160;GPIO_AF_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a141bdeea92f504cd4d972a8e911bbc87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141bdeea92f504cd4d972a8e911bbc87">&#9670;&nbsp;</a></span>SYSTEM_UART_GPIO_RX_PERCLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_GPIO_RX_PERCLK&#160;&#160;&#160;RCU_GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad97652f5234930d7c8ae9302e9904cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97652f5234930d7c8ae9302e9904cd4">&#9670;&nbsp;</a></span>SYSTEM_UART_GPIO_RX_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_GPIO_RX_PORT&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaba266e4bdc625f5641292ae3eab71e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba266e4bdc625f5641292ae3eab71e3">&#9670;&nbsp;</a></span>SYSTEM_UART_GPIO_TX_AF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_GPIO_TX_AF&#160;&#160;&#160;GPIO_AF_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aea590f44852e9baec9e3f93cf050a919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea590f44852e9baec9e3f93cf050a919">&#9670;&nbsp;</a></span>SYSTEM_UART_GPIO_TX_PERCLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_GPIO_TX_PERCLK&#160;&#160;&#160;RCU_GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3f1a5df0adec7d9878c2c64dcb7393a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1a5df0adec7d9878c2c64dcb7393a5">&#9670;&nbsp;</a></span>SYSTEM_UART_GPIO_TX_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_GPIO_TX_PORT&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab4264f2f5fe4f4326c7344ee466593a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4264f2f5fe4f4326c7344ee466593a2">&#9670;&nbsp;</a></span>SYSTEM_UART_IRQn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_IRQn&#160;&#160;&#160;USART0_IRQn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a20be045f08abe9ed0a90246d814f32e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20be045f08abe9ed0a90246d814f32e8">&#9670;&nbsp;</a></span>SYSTEM_UART_PERCLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_PERCLK&#160;&#160;&#160;RCU_USART0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abf7587282dd756152f6a96a8fc1af712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7587282dd756152f6a96a8fc1af712">&#9670;&nbsp;</a></span>SYSTEM_UART_PRE_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_PRE_PRIORITY&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00025">25</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a21101ea810030aba684b26b553c34c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21101ea810030aba684b26b553c34c68">&#9670;&nbsp;</a></span>SYSTEM_UART_RX_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_RX_PIN&#160;&#160;&#160;GPIO_PIN_10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7d957a1f16211e1f0064ea3567f05dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d957a1f16211e1f0064ea3567f05dd9">&#9670;&nbsp;</a></span>SYSTEM_UART_SUB_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_SUB_PRIORITY&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00026">26</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3685fe773d7f029c2f1a84de9173ad7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3685fe773d7f029c2f1a84de9173ad7f">&#9670;&nbsp;</a></span>SYSTEM_UART_TX_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYSTEM_UART_TX_PIN&#160;&#160;&#160;GPIO_PIN_9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a95f2f9952931a595f645c65786bda011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f2f9952931a595f645c65786bda011">&#9670;&nbsp;</a></span>UART_IT_DISABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_IT_DISABLE&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a976cb8061376dcdbd9368afef1f4b215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976cb8061376dcdbd9368afef1f4b215">&#9670;&nbsp;</a></span>UART_IT_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UART_IT_ENABLE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a> 第 <a class="el" href="bsp__uart_8h_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ae945f38ab64c1c0a7b43d12b04f4a544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae945f38ab64c1c0a7b43d12b04f4a544">&#9670;&nbsp;</a></span>ESP8285_UART_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ESP8285_UART_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8c_source.html">bsp_uart.c</a> 第 <a class="el" href="bsp__uart_8c_source.html#l00097">97</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//开启外设时钟</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    rcu_periph_clock_enable(<a class="code" href="bsp__uart_8h.html#a7da7cfa7061895d415033b8f1fb47ca3">ESP8285_UART_PERCLK</a>);<span class="comment">//串口时钟</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    rcu_periph_clock_enable(<a class="code" href="bsp__uart_8h.html#a16edf7e7d9af606b407c0fdfe5078782">ESP8285_UART_GPIO_TX_PERCLK</a>);<span class="comment">//GPIO时钟</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    rcu_periph_clock_enable(<a class="code" href="bsp__uart_8h.html#a92992e6ddb138a5e8757c0c17234c804">ESP8285_UART_GPIO_RX_PERCLK</a>);<span class="comment">//GPIO时钟</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">//TX IO设置</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    gpio_af_set(<a class="code" href="bsp__uart_8h.html#aa5ec6ae9de353c3310ae6d1483a02995">ESP8285_UART_GPIO_TX_PORT</a>, <a class="code" href="bsp__uart_8h.html#aa513dabf113d3c7e482f5fd92fa7ac65">ESP8285_UART_GPIO_TX_AF</a>, <a class="code" href="bsp__uart_8h.html#abad13ce95e91ace24e18fd88dbba03a3">ESP8285_UART_TX_PIN</a>);<span class="comment">//设置复用功能组</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    gpio_mode_set(<a class="code" href="bsp__uart_8h.html#aa5ec6ae9de353c3310ae6d1483a02995">ESP8285_UART_GPIO_TX_PORT</a>, GPIO_MODE_AF, GPIO_PUPD_PULLUP, <a class="code" href="bsp__uart_8h.html#abad13ce95e91ace24e18fd88dbba03a3">ESP8285_UART_TX_PIN</a>);<span class="comment">//AF复用模式，内部上拉</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    gpio_output_options_set(<a class="code" href="bsp__uart_8h.html#aa5ec6ae9de353c3310ae6d1483a02995">ESP8285_UART_GPIO_TX_PORT</a>, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, <a class="code" href="bsp__uart_8h.html#abad13ce95e91ace24e18fd88dbba03a3">ESP8285_UART_TX_PIN</a>);<span class="comment">//推挽输出，50M高速模式</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">//RX IO设置</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    gpio_af_set(<a class="code" href="bsp__uart_8h.html#a4b915104978e11880080824a26c7e2ba">ESP8285_UART_GPIO_RX_PORT</a>, <a class="code" href="bsp__uart_8h.html#ab261e088669b8a0aed343585a49dce4f">ESP8285_UART_GPIO_RX_AF</a>, <a class="code" href="bsp__uart_8h.html#a56c9b62465b584e6200dca4db1b88cf8">ESP8285_UART_RX_PIN</a>);<span class="comment">//设置复用功能组</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    gpio_mode_set(<a class="code" href="bsp__uart_8h.html#a4b915104978e11880080824a26c7e2ba">ESP8285_UART_GPIO_RX_PORT</a>, GPIO_MODE_AF, GPIO_PUPD_NONE, <a class="code" href="bsp__uart_8h.html#a56c9b62465b584e6200dca4db1b88cf8">ESP8285_UART_RX_PIN</a>);<span class="comment">//AF复用模式，无上下拉</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">//串口设置</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    usart_baudrate_set(<a class="code" href="bsp__uart_8h.html#aa53bbdd1a778ed53ba6a598ac5c27739">ESP8285_UART</a>, <a class="code" href="bsp__uart_8h.html#a4c1107638b44918a550f9f64feb2a788">ESP8285_UART_Baud</a>);<span class="comment">//设置波特率</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    usart_transmit_config(<a class="code" href="bsp__uart_8h.html#aa53bbdd1a778ed53ba6a598ac5c27739">ESP8285_UART</a>, USART_TRANSMIT_ENABLE);<span class="comment">//使能串口输出</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    usart_receive_config(<a class="code" href="bsp__uart_8h.html#aa53bbdd1a778ed53ba6a598ac5c27739">ESP8285_UART</a>, USART_RECEIVE_ENABLE);<span class="comment">//使能串口输入</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="ttc" id="absp__uart_8h_html_a16edf7e7d9af606b407c0fdfe5078782"><div class="ttname"><a href="bsp__uart_8h.html#a16edf7e7d9af606b407c0fdfe5078782">ESP8285_UART_GPIO_TX_PERCLK</a></div><div class="ttdeci">#define ESP8285_UART_GPIO_TX_PERCLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00049">bsp_uart.h:49</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a4b915104978e11880080824a26c7e2ba"><div class="ttname"><a href="bsp__uart_8h.html#a4b915104978e11880080824a26c7e2ba">ESP8285_UART_GPIO_RX_PORT</a></div><div class="ttdeci">#define ESP8285_UART_GPIO_RX_PORT</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00055">bsp_uart.h:55</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a4c1107638b44918a550f9f64feb2a788"><div class="ttname"><a href="bsp__uart_8h.html#a4c1107638b44918a550f9f64feb2a788">ESP8285_UART_Baud</a></div><div class="ttdeci">#define ESP8285_UART_Baud</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00043">bsp_uart.h:43</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a56c9b62465b584e6200dca4db1b88cf8"><div class="ttname"><a href="bsp__uart_8h.html#a56c9b62465b584e6200dca4db1b88cf8">ESP8285_UART_RX_PIN</a></div><div class="ttdeci">#define ESP8285_UART_RX_PIN</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00056">bsp_uart.h:56</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a7da7cfa7061895d415033b8f1fb47ca3"><div class="ttname"><a href="bsp__uart_8h.html#a7da7cfa7061895d415033b8f1fb47ca3">ESP8285_UART_PERCLK</a></div><div class="ttdeci">#define ESP8285_UART_PERCLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00044">bsp_uart.h:44</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a92992e6ddb138a5e8757c0c17234c804"><div class="ttname"><a href="bsp__uart_8h.html#a92992e6ddb138a5e8757c0c17234c804">ESP8285_UART_GPIO_RX_PERCLK</a></div><div class="ttdeci">#define ESP8285_UART_GPIO_RX_PERCLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00054">bsp_uart.h:54</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_aa513dabf113d3c7e482f5fd92fa7ac65"><div class="ttname"><a href="bsp__uart_8h.html#aa513dabf113d3c7e482f5fd92fa7ac65">ESP8285_UART_GPIO_TX_AF</a></div><div class="ttdeci">#define ESP8285_UART_GPIO_TX_AF</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00052">bsp_uart.h:52</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_aa53bbdd1a778ed53ba6a598ac5c27739"><div class="ttname"><a href="bsp__uart_8h.html#aa53bbdd1a778ed53ba6a598ac5c27739">ESP8285_UART</a></div><div class="ttdeci">#define ESP8285_UART</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00042">bsp_uart.h:42</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_aa5ec6ae9de353c3310ae6d1483a02995"><div class="ttname"><a href="bsp__uart_8h.html#aa5ec6ae9de353c3310ae6d1483a02995">ESP8285_UART_GPIO_TX_PORT</a></div><div class="ttdeci">#define ESP8285_UART_GPIO_TX_PORT</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00050">bsp_uart.h:50</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_ab261e088669b8a0aed343585a49dce4f"><div class="ttname"><a href="bsp__uart_8h.html#ab261e088669b8a0aed343585a49dce4f">ESP8285_UART_GPIO_RX_AF</a></div><div class="ttdeci">#define ESP8285_UART_GPIO_RX_AF</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00057">bsp_uart.h:57</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_abad13ce95e91ace24e18fd88dbba03a3"><div class="ttname"><a href="bsp__uart_8h.html#abad13ce95e91ace24e18fd88dbba03a3">ESP8285_UART_TX_PIN</a></div><div class="ttdeci">#define ESP8285_UART_TX_PIN</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00051">bsp_uart.h:51</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4de1f3206f1800cbc302126beec3b9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de1f3206f1800cbc302126beec3b9f9">&#9670;&nbsp;</a></span>System_UART_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void System_UART_Init </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>IT_Config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>系统串口外设初始化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">IT_Config</td><td>是否启用串口中断功能 <ul>
+<li>UART_IT_ENABLE: 启用串口中断 </li>
+<li>UART_IT_DISABLE: 不启用串口中断 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8c_source.html">bsp_uart.c</a> 第 <a class="el" href="bsp__uart_8c_source.html#l00022">22</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//开启外设时钟</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    rcu_periph_clock_enable(<a class="code" href="bsp__uart_8h.html#a20be045f08abe9ed0a90246d814f32e8">SYSTEM_UART_PERCLK</a>);<span class="comment">//使能串口时钟</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    rcu_periph_clock_enable(<a class="code" href="bsp__uart_8h.html#aea590f44852e9baec9e3f93cf050a919">SYSTEM_UART_GPIO_TX_PERCLK</a>);<span class="comment">//使能GPIO时钟</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    rcu_periph_clock_enable(<a class="code" href="bsp__uart_8h.html#a141bdeea92f504cd4d972a8e911bbc87">SYSTEM_UART_GPIO_RX_PERCLK</a>);<span class="comment">//使能GPIO时钟</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//TX IO设置</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    gpio_af_set(<a class="code" href="bsp__uart_8h.html#a3f1a5df0adec7d9878c2c64dcb7393a5">SYSTEM_UART_GPIO_TX_PORT</a>, <a class="code" href="bsp__uart_8h.html#aaba266e4bdc625f5641292ae3eab71e3">SYSTEM_UART_GPIO_TX_AF</a>, <a class="code" href="bsp__uart_8h.html#a3685fe773d7f029c2f1a84de9173ad7f">SYSTEM_UART_TX_PIN</a>);<span class="comment">//设置复用功能组</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    gpio_mode_set(<a class="code" href="bsp__uart_8h.html#a3f1a5df0adec7d9878c2c64dcb7393a5">SYSTEM_UART_GPIO_TX_PORT</a>, GPIO_MODE_AF, GPIO_PUPD_PULLUP, <a class="code" href="bsp__uart_8h.html#a3685fe773d7f029c2f1a84de9173ad7f">SYSTEM_UART_TX_PIN</a>);<span class="comment">//AF复用模式，内部上拉</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    gpio_output_options_set(<a class="code" href="bsp__uart_8h.html#a3f1a5df0adec7d9878c2c64dcb7393a5">SYSTEM_UART_GPIO_TX_PORT</a>, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, <a class="code" href="bsp__uart_8h.html#a3685fe773d7f029c2f1a84de9173ad7f">SYSTEM_UART_TX_PIN</a>);<span class="comment">//推挽输出，50M高速模式</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//RX IO设置</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    gpio_af_set(<a class="code" href="bsp__uart_8h.html#ad97652f5234930d7c8ae9302e9904cd4">SYSTEM_UART_GPIO_RX_PORT</a>, <a class="code" href="bsp__uart_8h.html#a32ee20e698b44b1ffbb9a86fcdf10a4f">SYSTEM_UART_GPIO_RX_AF</a>, <a class="code" href="bsp__uart_8h.html#a21101ea810030aba684b26b553c34c68">SYSTEM_UART_RX_PIN</a>);<span class="comment">//设置复用功能组</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    gpio_mode_set(<a class="code" href="bsp__uart_8h.html#ad97652f5234930d7c8ae9302e9904cd4">SYSTEM_UART_GPIO_RX_PORT</a>,GPIO_MODE_AF, GPIO_PUPD_NONE, <a class="code" href="bsp__uart_8h.html#a21101ea810030aba684b26b553c34c68">SYSTEM_UART_RX_PIN</a>);<span class="comment">//AF复用模式，无上下拉</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//串口设置</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    usart_baudrate_set(<a class="code" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>, <a class="code" href="bsp__uart_8h.html#a3c245e09c5071b95b4a0c7ecac982a63">SYSTEM_UART_Baud</a>);<span class="comment">//设置波特率</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    usart_transmit_config(<a class="code" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>, USART_TRANSMIT_ENABLE);<span class="comment">//使能串口输出</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    usart_receive_config(<a class="code" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>, USART_RECEIVE_ENABLE);<span class="comment">//使能串口输入</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//串口中断设置</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span>(IT_Config != <a class="code" href="bsp__uart_8h.html#a95f2f9952931a595f645c65786bda011">UART_IT_DISABLE</a>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        nvic_irq_enable(<a class="code" href="bsp__uart_8h.html#ab4264f2f5fe4f4326c7344ee466593a2">SYSTEM_UART_IRQn</a>, <a class="code" href="bsp__uart_8h.html#abf7587282dd756152f6a96a8fc1af712">SYSTEM_UART_PRE_PRIORITY</a>, <a class="code" href="bsp__uart_8h.html#a7d957a1f16211e1f0064ea3567f05dd9">SYSTEM_UART_SUB_PRIORITY</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        usart_interrupt_enable(<a class="code" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>, USART_INT_TBE);<span class="comment">//使能写缓冲寄存器空闲中断</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        usart_interrupt_enable(<a class="code" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>, USART_INT_RBNE);<span class="comment">//使能读缓冲寄存器非空中断</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    usart_enable(<a class="code" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>);<span class="comment">//启用串口</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="ttc" id="absp__uart_8h_html_a141bdeea92f504cd4d972a8e911bbc87"><div class="ttname"><a href="bsp__uart_8h.html#a141bdeea92f504cd4d972a8e911bbc87">SYSTEM_UART_GPIO_RX_PERCLK</a></div><div class="ttdeci">#define SYSTEM_UART_GPIO_RX_PERCLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00033">bsp_uart.h:33</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a1c7eba9da52b565cfa64d94d44b3cbb7"><div class="ttname"><a href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a></div><div class="ttdeci">#define SYSTEM_UART</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00021">bsp_uart.h:21</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a20be045f08abe9ed0a90246d814f32e8"><div class="ttname"><a href="bsp__uart_8h.html#a20be045f08abe9ed0a90246d814f32e8">SYSTEM_UART_PERCLK</a></div><div class="ttdeci">#define SYSTEM_UART_PERCLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00023">bsp_uart.h:23</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a21101ea810030aba684b26b553c34c68"><div class="ttname"><a href="bsp__uart_8h.html#a21101ea810030aba684b26b553c34c68">SYSTEM_UART_RX_PIN</a></div><div class="ttdeci">#define SYSTEM_UART_RX_PIN</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00035">bsp_uart.h:35</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a32ee20e698b44b1ffbb9a86fcdf10a4f"><div class="ttname"><a href="bsp__uart_8h.html#a32ee20e698b44b1ffbb9a86fcdf10a4f">SYSTEM_UART_GPIO_RX_AF</a></div><div class="ttdeci">#define SYSTEM_UART_GPIO_RX_AF</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00036">bsp_uart.h:36</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a3685fe773d7f029c2f1a84de9173ad7f"><div class="ttname"><a href="bsp__uart_8h.html#a3685fe773d7f029c2f1a84de9173ad7f">SYSTEM_UART_TX_PIN</a></div><div class="ttdeci">#define SYSTEM_UART_TX_PIN</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00030">bsp_uart.h:30</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a3c245e09c5071b95b4a0c7ecac982a63"><div class="ttname"><a href="bsp__uart_8h.html#a3c245e09c5071b95b4a0c7ecac982a63">SYSTEM_UART_Baud</a></div><div class="ttdeci">#define SYSTEM_UART_Baud</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00022">bsp_uart.h:22</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a3f1a5df0adec7d9878c2c64dcb7393a5"><div class="ttname"><a href="bsp__uart_8h.html#a3f1a5df0adec7d9878c2c64dcb7393a5">SYSTEM_UART_GPIO_TX_PORT</a></div><div class="ttdeci">#define SYSTEM_UART_GPIO_TX_PORT</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00029">bsp_uart.h:29</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a7d957a1f16211e1f0064ea3567f05dd9"><div class="ttname"><a href="bsp__uart_8h.html#a7d957a1f16211e1f0064ea3567f05dd9">SYSTEM_UART_SUB_PRIORITY</a></div><div class="ttdeci">#define SYSTEM_UART_SUB_PRIORITY</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00026">bsp_uart.h:26</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_a95f2f9952931a595f645c65786bda011"><div class="ttname"><a href="bsp__uart_8h.html#a95f2f9952931a595f645c65786bda011">UART_IT_DISABLE</a></div><div class="ttdeci">#define UART_IT_DISABLE</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00018">bsp_uart.h:18</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_aaba266e4bdc625f5641292ae3eab71e3"><div class="ttname"><a href="bsp__uart_8h.html#aaba266e4bdc625f5641292ae3eab71e3">SYSTEM_UART_GPIO_TX_AF</a></div><div class="ttdeci">#define SYSTEM_UART_GPIO_TX_AF</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00031">bsp_uart.h:31</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_ab4264f2f5fe4f4326c7344ee466593a2"><div class="ttname"><a href="bsp__uart_8h.html#ab4264f2f5fe4f4326c7344ee466593a2">SYSTEM_UART_IRQn</a></div><div class="ttdeci">#define SYSTEM_UART_IRQn</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00024">bsp_uart.h:24</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_abf7587282dd756152f6a96a8fc1af712"><div class="ttname"><a href="bsp__uart_8h.html#abf7587282dd756152f6a96a8fc1af712">SYSTEM_UART_PRE_PRIORITY</a></div><div class="ttdeci">#define SYSTEM_UART_PRE_PRIORITY</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00025">bsp_uart.h:25</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_ad97652f5234930d7c8ae9302e9904cd4"><div class="ttname"><a href="bsp__uart_8h.html#ad97652f5234930d7c8ae9302e9904cd4">SYSTEM_UART_GPIO_RX_PORT</a></div><div class="ttdeci">#define SYSTEM_UART_GPIO_RX_PORT</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00034">bsp_uart.h:34</a></div></div>
+<div class="ttc" id="absp__uart_8h_html_aea590f44852e9baec9e3f93cf050a919"><div class="ttname"><a href="bsp__uart_8h.html#aea590f44852e9baec9e3f93cf050a919">SYSTEM_UART_GPIO_TX_PERCLK</a></div><div class="ttdeci">#define SYSTEM_UART_GPIO_TX_PERCLK</div><div class="ttdef"><b>Definition:</b> <a href="bsp__uart_8h_source.html#l00028">bsp_uart.h:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8a5ef2e5978d824283dbc575d7556279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5ef2e5978d824283dbc575d7556279">&#9670;&nbsp;</a></span>System_UART_IT_Handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void System_UART_IT_Handle </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="bsp__uart_8c_source.html">bsp_uart.c</a> 第 <a class="el" href="bsp__uart_8c_source.html#l00055">55</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//如果触发了写缓冲寄存器空闲中断</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(usart_interrupt_flag_get(<a class="code" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>, USART_INT_FLAG_TBE) != 0x00)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//如果触发了读缓冲寄存器非空中断</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span>(usart_interrupt_flag_get(<a class="code" href="bsp__uart_8h.html#a1c7eba9da52b565cfa64d94d44b3cbb7">SYSTEM_UART</a>, USART_INT_FLAG_RBNE) != 0x00)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_350c8a3315b9de76597c9530ef31a96a.html">BSP</a></li><li class="navelem"><a class="el" href="dir_38b3b88d2379b05726c66e4f0014ead8.html">Include</a></li><li class="navelem"><a class="el" href="bsp__uart_8h.html">bsp_uart.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
