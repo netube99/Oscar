@@ -12,4 +12,4 @@
 项目开源资料：
 * [板载资源对应的数据手册](./Document/DATASHEET)
 * [开发板原理图/PCB设计（Altium Designer）](./PCB)
-* [开发板MDK工程模板（GD32F1x0固件库、BSP驱动库）](./Program/Project Template)
+* [开发板MDK工程模板（GD32F1x0固件库、BSP驱动库）](./Program/Project_Template)
