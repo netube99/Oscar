@@ -5,7 +5,7 @@ netube_99 netube@163.com 2021.01.17
 ## 1.简介
 Oscar开发板基于MDK开发环境的工程模板，此模板使用Keil5作为项目编译环境，VSCode作为代码编辑器，集成了GD32F1x0标准固件库V3.2版、Oscar开发板板级支持包BSP库、已配置完成的MDK工程，工程模板可直接编译；
 
-![目录截图](./Document/DOC_IMG/目录截图.png)
+![目录截图](./Document/IMG/目录截图.png)
 
 ## 2.使用教程
 当您要创建一个新的工程时，可以直接复制 *Project Template* 文件夹，并重命名文件夹为您工程的名称；进入新工程文件夹并打开 *./Keil 目录下的Keil5工程 *Project.uvprojx* ，即可在原有的基础上直接进行后续开发；

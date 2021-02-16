@@ -11,5 +11,16 @@
 
 #include "gd32f1x0.h"
 
+#define SIO_SUCCESS     0x01
+#define SIO_ERROR       0x00
+
+typedef struct
+{
+    uint32_t spi_periph ;//spi外设基地址
+    
+}sio;
+
+void SIO_Init();
+void SIO_IT_Handle(sio *SIO_Handle);
 
 #endif

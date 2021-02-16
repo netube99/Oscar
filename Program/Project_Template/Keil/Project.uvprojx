@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\Device\CMSIS;..\Device\CMSIS\GD\GD32F1x0\Include;..\Device\GD32F1x0_standard_peripheral\Include;..\BSP\Include;..\User\Include</IncludePath>
+              <IncludePath>..\Device\CMSIS;..\Device\CMSIS\GD\GD32F1x0\Include;..\Device\GD32F1x0_standard_peripheral\Include;..\BSP\Include;..\User\Include;..\BSP\Lib\Ring_Buffer</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -415,11 +415,6 @@
               <FilePath>..\BSP\Source\bsp_uart.c</FilePath>
             </File>
             <File>
-              <FileName>ring_buffer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\Source\ring_buffer.c</FilePath>
-            </File>
-            <File>
               <FileName>uio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\Source\uio.c</FilePath>
@@ -438,6 +433,11 @@
               <FileName>sio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\Source\sio.c</FilePath>
+            </File>
+            <File>
+              <FileName>ring_buffer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\Lib\Ring_Buffer\ring_buffer.c</FilePath>
             </File>
           </Files>
         </Group>

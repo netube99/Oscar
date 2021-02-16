@@ -28,5 +28,5 @@
   ..\Device\GD32F1x0_standard_peripheral\Include\gd32f1x0_wwdgt.h \
   ..\Device\GD32F1x0_standard_peripheral\Include\gd32f1x0_misc.h \
   ..\Device\GD32F1x0_standard_peripheral\Include\gd32f1x0_tsi.h \
-  ..\BSP\Include\uio.h ..\BSP\Include\ring_buffer.h \
+  ..\BSP\Include\uio.h ..\BSP\Lib\Ring_Buffer\ring_buffer.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h
