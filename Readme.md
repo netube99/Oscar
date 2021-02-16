@@ -15,4 +15,4 @@
 * [开发板MDK工程模板（GD32F1x0固件库、BSP驱动库）](./Program/Project_Template)
 
 ## 硬件外观
-![PCB](C:\Users\netube\Desktop\NETUBE\Oscar\Document\IMG\Board.png)
+![PCB](./Document/IMG/Board.png)
