@@ -37,8 +37,8 @@ Oscar开发板基于MDK开发环境的工程模板，此模板使用Keil5作为�
 还有其他的一些文档数据，比如说您正在看的这份Readme。
 
 ## 4.注意事项
-1. 在首次使用GD32F130这款芯片的时候，您应该给您电脑上的Keil5 安装 GD32F1x0支持包，支持包文件在本项目开源文件夹中 *OscarA/Document/DATASHEET/GD32/GigaDevice.GD32F1x0_DFP.3.2.0.pack*，双击打开可以直接安装，前提是您已经正确安装了Keil5；
+1. 在首次使用GD32F130这款芯片的时候，您应该给您电脑上的Keil5 安装 GD32F1x0支持包，支持包文件在本项目开源文件夹中: [支持包](../../Document/DATASHEET/GD32/GigaDevice.GD32F1x0_DFP.3.2.0.pack)，打开后可以直接安装，前提是您已经正确安装了Keil5；
 
-2. 如果编译未经修改的工程模块后出现了大量的报错提示，您应该去下载这个支持包安装，大概率可以解决报错问题，但具体原因我也没有搞明白，毕竟我也是第一次用Keil5开发单片机嘻嘻，下载地址：https://armkeil.blob.core.windows.net/legacy/MDKCM525.EXE
+2. 如果编译未经修改的工程模块后出现了大量的报错提示，您应该去下载这个支持包安装，大概率可以解决报错问题，但具体原因我也没有搞明白，毕竟我也是第一次用Keil5做单片机开发，下载地址：https://armkeil.blob.core.windows.net/legacy/MDKCM525.EXE
 
 3. 在GD32F1x0的用户手册第75页可以看到这样一段文字：*AHB和APB2/APB1域的最高时钟频率为72MHz。但当使用I2C外设时，APB1时钟需保证不大于36MHz。*但是F130的固件库原版直接编译出来的时钟频率是主频72M，APB1也是72M；因为Oscar是有使用I2C外设的，按照手册的要求，我修改了 *Project_Template/Device/CMSIS/GD/GD32F1x0/Source* 目录下的文件 *system_gd32f1x0.c* 第201行，通过给时钟树二分频，将APB1的时钟设置为了36M，保证I2C外设的正常工作；
