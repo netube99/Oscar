@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=PA4 Pin=DS1-5
-Removed Pin From Net: NetName=+3.3 Pin=R1-2
-Removed Pin From Net: NetName=PA4 Pin=R2-1
-Removed Pin From Net: NetName=+3.3 Pin=R2-2
-Removed Member From Class: ClassName=Flash Member=R1
-Removed Member From Class: ClassName=LCD Member=R2
-Added Pin To Net: NetName=GND Pin=DS1-5
-Added Pin To Net: NetName=GND Pin=U1-1
